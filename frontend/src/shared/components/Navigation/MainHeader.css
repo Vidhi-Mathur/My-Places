@@ -1,0 +1,24 @@
+.main-header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ff0055;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    padding: 0 1rem;
+    z-index: 5;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+/* This is the media query part of the rule. It specifies that the following styles should be applied when the viewport width is 768 pixels or larger. This media query targets devices with a width equal to or greater than 768 pixels, typically tablets and larger screens. */
+@media (min-width: 768px){
+    .main-header{
+        justify-content: space-around;
+    }
+}
